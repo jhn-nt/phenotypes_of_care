@@ -2,9 +2,6 @@
 data/
 *.csv
 
-# Generated outputs
-results/
-
 # Python
 __pycache__/
 *.pyc
