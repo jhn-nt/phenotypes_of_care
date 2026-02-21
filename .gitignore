@@ -1,0 +1,21 @@
+# Data (patient-level CSVs — do not commit)
+data/
+*.csv
+
+# Generated outputs
+results/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
