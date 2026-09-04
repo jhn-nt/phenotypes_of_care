@@ -48,36 +48,22 @@ Cohort definitions and the expected file layout are in [`data/README.md`](data/R
 
 ### Output
 
-`01_mimic_primary_analysis.ipynb` writes to `figures/` and `mortality_results.xlsx`:
+`care_phenotypes_mimic.ipynb` writes to `figures/` and `mortality_results.xlsx`:
 
 - Figure 1 — ΔAUROC across all four configurations, per phenotype and severity stratum
 - Figure 2 — Clinical-Regime Decomposition across the continuous SOFA spectrum
 - Figures 3–4 — TRM calibration curves and Expected Calibration Error
 - Extended Data Table 2 — four-configuration results on both the race and care-quality axes
 
-`02_eicu_validation.ipynb` produces the equivalent four-configuration results for both eICU phenotypes (Extended Data Table 3), together with the Clinical-Regime Decomposition sweep that defines the analysis windows.
+`eicu_validation.ipynb` produces the equivalent four-configuration results for both eICU phenotypes (Extended Data Table 3), together with the Clinical-Regime Decomposition sweep that defines the analysis windows.
 
 ### Runtime
 
 On a standard desktop, end to end:
 
-- `01_mimic_primary_analysis.ipynb` — approximately 30–60 minutes
-- `02_eicu_validation.ipynb` — approximately 20–40 minutes
+- `01_mimic_primary_analysis.ipynb`
+- `02_eicu_validation.ipynb`
 
 Runtime is dominated by the Clinical-Regime Decomposition sweep and the resampling: 2,000 bootstrap resamples for quartile confidence intervals, 1,000 for race, 1,000 permutations for the maximum-JT uniformity test, and 10,000 for the directional JT degradation test.
 
-## Reproducibility
 
-Results are deterministic given the same data, the pinned package versions, and the fixed random seed (42).
-
-## Citation
-
-Upariputtanggoon N, Giancotti R, Al Attrach R, AL-Louzi RM, Angelotti G, Cajas SA, Chaisutyakorn K, Ellen JG, Hernandez-Boussard T, Kleinlein R, Lorenzi LM, Nanyonjo J, Celi LA. *Calibrated to Injustice and Accurately Unjust: Clinical AI Has Been Predicting the Wrong World.*
-
-## License
-
-MIT — see [`LICENSE`](LICENSE).
-
-## Contact
-
-Nachanon Upariputtanggoon — nachanon.up@gmail.com
