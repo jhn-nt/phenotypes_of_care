@@ -66,6 +66,10 @@ On a standard desktop, end to end:
 
 Runtime is dominated by the Clinical-Regime Decomposition sweep and the resampling: 2,000 bootstrap resamples for quartile confidence intervals, 1,000 for race, 1,000 permutations for the maximum-JT uniformity test, and 10,000 for the directional JT degradation test.
 
+## License
+
+MIT — see [`LICENSE`](LICENSE).
+
 ## Reproducibility
 
 Results are deterministic given the same data, the pinned package versions
