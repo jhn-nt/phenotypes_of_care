@@ -6,8 +6,8 @@ No data files are included in this repository. MIMIC-IV and eICU-CRD are credent
 
 Both are available from PhysioNet. Access requires a PhysioNet account, completion of the CITI "Data or Specimens Only Research" training, and a signed data use agreement for each database.
 
-- MIMIC-IV — https://physionet.org/content/mimiciv/
-- eICU Collaborative Research Database — https://physionet.org/content/eicu-crd/
+- MIMIC-IV : https://physionet.org/content/mimiciv/
+- eICU Collaborative Research Database : https://physionet.org/content/eicu-crd/
 
 ---
 
