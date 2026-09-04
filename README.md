@@ -59,11 +59,6 @@ Cohort definitions and the expected file layout are in [`data/README.md`](data/R
 
 ### Runtime
 
-On a standard desktop, end to end:
-
-- `01_mimic_primary_analysis.ipynb`
-- `02_eicu_validation.ipynb`
-
 Runtime is dominated by the Clinical-Regime Decomposition sweep and the resampling: 2,000 bootstrap resamples for quartile confidence intervals, 1,000 for race, 1,000 permutations for the maximum-JT uniformity test, and 10,000 for the directional JT degradation test.
 
 
