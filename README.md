@@ -72,7 +72,6 @@ MIT — see [`LICENSE`](LICENSE).
 
 ## Reproducibility
 
-Results are deterministic given the same data, the pinned package versions
-in `requirements.txt`, and the fixed random seed (42).
+Results are fully reproducible given the same data, the package versions pinned in `requirements.txt`, and random seed 42. Primary AUROC estimates use pooled out-of-fold predictions and are robust to seed choice; seed 42 is fixed for exact numerical reproduction only.
 
 
