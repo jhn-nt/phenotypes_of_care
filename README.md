@@ -27,7 +27,6 @@ The two notebooks are independent and can be run in either order.
 git clone https://github.com/jhn-nt/phenotypes_of_care.git
 cd phenotypes_of_care
 pip install -r requirements.txt
-Typical install time on a standard desktop: 2–5 minutes.
 ```
 
 Typical install time on a standard desktop: 2–5 minutes.
