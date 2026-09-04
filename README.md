@@ -8,8 +8,8 @@ The code implements the Four-Configuration Logical Asymmetry design, the Therape
 
 | Path | Description |
 |---|---|
-| `notebooks/01_mimic_primary_analysis.ipynb` | MIMIC-IV analysis — mouthcare and turning phenotypes. Produces Figures 1–4 and Extended Data Table 2. |
-| `notebooks/02_eicu_validation.ipynb` | eICU-CRD external validation — glycemic monitoring and pain reassessment phenotypes. Produces Extended Data Table 3. |
+| `main/01_mimic_primary_analysis.ipynb` | MIMIC-IV analysis — mouthcare and turning phenotypes. Produces Figures 1–4 and Extended Data Table 2. |
+| `main/02_eicu_validation.ipynb` | eICU-CRD external validation — glycemic monitoring and pain reassessment phenotypes. Produces Extended Data Table 3. |
 | `requirements.txt` | Pinned package versions. |
 | `data/README.md` | Data access, cohort definitions, and expected file layout. |
 
