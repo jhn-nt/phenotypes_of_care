@@ -1,6 +1,12 @@
-# Data (patient-level CSVs — do not commit)
-data/
+# Data (patient-level — do not commit)
+data/*
+!data/README.md
 *.csv
+*.pkl
+
+# Generated output
+figures/
+*.xlsx
 
 # Python
 __pycache__/
