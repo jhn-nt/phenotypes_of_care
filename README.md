@@ -18,7 +18,7 @@ The two notebooks are independent and can be run in either order.
 ## System requirements
 
 - Python 3.9 (tested on 3.9.12)
-- Tested on Ubuntu 20.04 and Windows 10
+- Tested on Windows 11
 - No non-standard hardware. Approximately 8 GB RAM is sufficient.
 
 ## Installation
@@ -27,6 +27,7 @@ The two notebooks are independent and can be run in either order.
 git clone https://github.com/jhn-nt/phenotypes_of_care.git
 cd phenotypes_of_care
 pip install -r requirements.txt
+Typical install time on a standard desktop: 2–5 minutes.
 ```
 
 Typical install time on a standard desktop: 2–5 minutes.
@@ -50,15 +51,25 @@ Cohort definitions and the expected file layout are in [`data/README.md`](data/R
 
 `care_phenotypes_mimic.ipynb` writes to `figures/` and `mortality_results.xlsx`:
 
-- Figure 1 — ΔAUROC across all four configurations, per phenotype and severity stratum
-- Figure 2 — Clinical-Regime Decomposition across the continuous SOFA spectrum
-- Figures 3–4 — TRM calibration curves and Expected Calibration Error
-- Extended Data Table 2 — four-configuration results on both the race and care-quality axes
+- ΔAUROC across all four configurations, per phenotype and severity stratum
+- Clinical-Regime Decomposition across the SOFA spectrum
+- TRM calibration curves and Expected Calibration Error
+- Four-configuration results
 
 `eicu_validation.ipynb` produces the equivalent four-configuration results for both eICU phenotypes (Extended Data Table 3), together with the Clinical-Regime Decomposition sweep that defines the analysis windows.
 
 ### Runtime
 
+On a standard desktop, end to end:
+
+- `care_phenotypes_mimic.ipynb`: approximately 60 minutes
+- `eicu_validation.ipynb`: approximately 40 minutes
+
 Runtime is dominated by the Clinical-Regime Decomposition sweep and the resampling: 2,000 bootstrap resamples for quartile confidence intervals, 1,000 for race, 1,000 permutations for the maximum-JT uniformity test, and 10,000 for the directional JT degradation test.
+
+## Reproducibility
+
+Results are deterministic given the same data, the pinned package versions
+in `requirements.txt`, and the fixed random seed (42).
 
 
